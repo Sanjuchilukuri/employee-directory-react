@@ -1,0 +1,124 @@
+.employee-model {
+  // display: none;
+  width: 100%;
+}
+.employee-model section {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  #file {
+    display: none;
+  }
+  .image-section {
+    label {
+      cursor: pointer;
+    }
+    img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+
+  form {
+    div p {
+      margin-top: 0;
+      font-weight: bold;
+    }
+    label[for="empno"] {
+      display: block;
+    }
+    .wrapper {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    label {
+      color: #494a4b;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+    input {
+      outline: none;
+      padding: 0.5rem;
+      border: 1px solid rgba(54, 53, 53, 0.185);
+      border-radius: 5px;
+      width: 14rem;
+    }
+    .input-error {
+      border: 1px solid red;
+    }
+    .error {
+      color: red;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding-left: 1.3rem;
+      background-image: url(../../../assets/warning-diamond.svg);
+      background-repeat: no-repeat;
+    }
+    .show + span {
+      display: inline !important;
+    }
+    input:focus,
+    select:focus {
+      border: 2px solid #4c9aff;
+    }
+    .emp-inf-heading {
+      margin-top: 1rem;
+    }
+    #joining {
+      width: 24rem;
+    }
+    select {
+      border: 1px solid rgba(54, 53, 53, 0.185);
+      border-radius: 5px;
+      outline: none;
+      padding: 0.5rem;
+      color: #6a6f74;
+      width: 24rem;
+      /* width: 25.5vw; */
+      background-color: #f4f5f7;
+    }
+    & > div:nth-child(3) {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 0.5rem 0.8rem;
+        &:first-child {
+          background-color: rgba(253, 233, 233, 1);
+          color: #ff4a4a;
+        }
+        &:nth-child(2) {
+          background-color: #fd3535;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 802px) {
+  .employee-model section form input,
+  .employee-model section form select {
+    min-width: 10rem;
+    max-width: 14rem;
+  }
+}

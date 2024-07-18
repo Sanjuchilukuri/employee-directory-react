@@ -1,0 +1,132 @@
+.sidenav-all {
+  margin-top: 1.2rem;
+  & > p:first-child {
+    color: #a1a5a8;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .sidenav-all-employee {
+    position: relative;
+    a {
+      text-decoration: none;
+    }
+  }
+  .all-dashboard-item,
+  .all-employees-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0.7rem 0.7rem 0.3rem;
+    cursor: pointer;
+    width: 85%;
+    border-radius: 0.65rem;
+    div {
+      display: flex;
+      gap: 1rem;
+      img {
+        width: auto;
+        height: 1.25rem;
+      }
+      p {
+        font-weight: 600;
+        text-decoration: none;
+        margin: 0;
+        font-size: 1rem;
+        color: #6a6f74;
+      }
+    }
+    .arrow {
+      rotate: 270deg;
+    }
+    &::after {
+      position: absolute;
+      right: 0.9375rem;
+      font-family: "FontAwesome";
+      content: "\f078";
+      rotate: 270deg;
+      color: #6a6f74;
+    }
+  }
+}
+.sidenav-role {
+  margin-top: 0.8rem;
+  a {
+    text-decoration: none;
+  }
+  & > p:first-child {
+    margin: 0;
+    color: #a1a5a8;
+    font-size: 0.8rem;
+  }
+  .roles-wrapper{
+    position: relative;
+  }
+  .user-roles:first-child {
+    margin-top: 1rem;
+  }
+  .user-roles {
+    width: 85%;
+    border-radius: .65rem;
+    // background-color: inherit;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.7rem 0.7rem 0.7rem 0.3rem;
+    // gap: 1rem;
+    div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+    cursor: pointer;
+    img {
+      width: auto;
+      height: 1.4375rem;
+    }
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: #6e7477;
+      font-weight: 600;
+    }
+    &::after {
+      font-family: "FontAwesome";
+      content: "\f078";
+      position: absolute;
+      right: 0.9375rem;
+      color: #6a6f74;
+      font-weight: 900;
+      rotate: 270deg;
+    }
+  }
+}
+.active {
+  p,
+  div {
+    color: #f44848 !important;
+    background-color: #fde9e9 !important;
+  }
+
+  div::after {
+    color: #f44848 !important;
+  }
+
+  img {
+    filter: invert(53%) sepia(87%) saturate(2987%) hue-rotate(329deg)
+      brightness(94%) contrast(103%);
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    right: 1.2rem;
+    top: 0;
+    height: 3.06rem;
+    width: 4px;
+    border-radius: 5px 0 0 5px;
+    background-color: #f44848;
+  }
+}

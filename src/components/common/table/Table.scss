@@ -1,0 +1,154 @@
+.user-data {
+  width: inherit;
+  margin-top: 0.85rem;
+  box-shadow: 0px 2px 2px 3px rgba(174, 174, 174, 0.299);
+  border-radius: 0.5rem;
+  .delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+    align-items: center;
+    border-bottom: 1px solid #6a6f74;
+    div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      & > button {
+        cursor: not-allowed;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #f89191;
+        padding: 0.4rem;
+        font-size: 1rem;
+      }
+    }
+    & img:last-child {
+      height: 1.5625rem;
+    }
+  }
+  table {
+    width: 100%;
+    min-width: 860px;
+    border-collapse: collapse;
+    input {
+      cursor: pointer;
+    }
+    tr {
+      position: relative;
+      border-bottom: 1px solid #6a6f74;
+      td:first-child {
+        padding: 0.7rem;
+      }
+      td {
+        font-size: 0.8rem;
+        padding: 0rem;
+        &:has(button) {
+          text-align: center;
+        }
+      }
+      .ellipsis {
+        padding: 0.7rem;
+        font-weight: 900;
+        text-align: center;
+        cursor: pointer;
+        text-align: center;
+      }
+      .transparent-btn {
+        border: none;
+        background-color: transparent;
+        outline: none;
+      }
+      &:not:first-child:hover {
+        background-color: #fff4f4;
+      }
+      .show + div {
+        display: flex;
+      }
+    }
+
+    th {
+      .heading-wrapper {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+      }
+      button {
+        cursor: pointer;
+        margin: 0;
+        padding: 1rem 0.5rem 1rem 0rem;
+        text-align: start;
+        font-size: 0.8rem;
+      }
+      .icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        i {
+          font-size: 0.5rem;
+        }
+      }
+    }
+    th:last-child {
+      font-weight: 900;
+    }
+    .user {
+      display: flex;
+      gap: 0.5rem;
+      img {
+        height: 1.875rem;
+        width: 1.875rem;
+        border-radius: 50%;
+      }
+      .user-details {
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .apperance p {
+      text-align: center;
+      background-color: #e7f4e8;
+      padding: 7px 0px;
+      border-radius: 0.625rem;
+      color: #39bb8b;
+      width: 3.75rem;
+    }
+  }
+
+  .last-element {
+    // position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    position: absolute;
+    top: -1.4rem;
+    right: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px black;
+    padding: 0;
+    & > button {
+      width: 100px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0.3rem;
+      border: 0;
+      border-bottom: 1px solid black !important;
+      text-align: center;
+      cursor: pointer;
+      &:active {
+        color: red;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}

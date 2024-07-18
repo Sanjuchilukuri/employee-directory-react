@@ -1,0 +1,41 @@
+.sidenav-update {
+  margin-right: 1rem;
+  position: relative;
+  bottom: 0;
+  background-color: #fdf2f5;
+  padding: 0.5rem 0.5rem 1rem;
+  min-width: 13rem;
+  border-radius: 1.25rem;
+  & p:first-child {
+    color: #f44848;
+    font-size: 1rem;
+  }
+  .update-description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6a6f74;
+  }
+  div {
+    display: flex;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    // button {
+    //   cursor: pointer;
+    //   padding: 0.8rem;
+    //   border-radius: 0.5625rem;
+    //   border: none;
+    //   outline: none;
+    //   font-size: 1rem;
+    //   &:first-child {
+    //     background-color: rgba(253, 233, 233, 1);
+    //     color: #ff4a4a;
+    //     margin-right: 0.625rem;
+    //   }
+    //   &:nth-child(2) {
+    //     background-color: #fd3535;
+    //     color: rgba(253, 233, 233, 0.804);
+    //   }
+    // }
+  }
+}

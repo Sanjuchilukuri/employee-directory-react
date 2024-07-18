@@ -1,0 +1,51 @@
+.add-employee {
+  width: inherit;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  h2 {
+    color: #414a52;
+    font-size: 1rem;
+    margin: 1.3rem 0rem 0.9rem;
+    font-weight: 600;
+  }
+  p {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #a1a5a8;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  div:nth-child(2) {
+    display: flex;
+  }
+  button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  .export-btn {
+    background-color: #fff;
+    color: #a1a5a8;
+    border: 1px solid rgb(138, 128, 128);
+    margin-right: 0.9375rem;
+  }
+  .export-btn::before {
+    content: url(../../../assets/export.png);
+    padding-right: 0.625rem;
+  }
+
+  .add-btn {
+    color: #fff;
+    border-radius: 0.5625rem;
+  }
+  .add-btn::before {
+    font-family: "FontAwesome";
+    content: "\2b";
+    padding-right: 0.625rem;
+  }
+}

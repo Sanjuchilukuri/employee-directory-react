@@ -1,0 +1,101 @@
+.cards {
+    display: flex;
+    margin: 1rem .5rem ;
+    flex-wrap: wrap;
+    gap: 1rem;
+    p {
+      color: #62798f;
+    }
+    .card {
+      width: 18.625rem;
+      padding: 1rem;
+      box-shadow: 0 0 0 2px #e6e6e6;
+      border-radius: 0.625rem;
+      .text-icon {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: black;
+          font-size: 1.1rem;
+          font-weight: bold;
+          margin: 0.7rem 0rem;
+        }
+      }
+      .about {
+        .department,
+        .location {
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-size: 1rem;
+            margin: 0.4rem;
+          }
+          .department-text,
+          .location-text {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+          }
+        }
+        .total-employees {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            height: 1.25rem;
+            width: 1.25rem;
+            border-radius: 50%;
+            position: relative;
+          }
+          .img-container {
+            display: flex;
+            // position: relative;
+            // left: 1.875rem;
+            img:first-child {
+              z-index: 1;
+            }
+            img:nth-child(2) {
+              z-index: 2;
+              right: 0.625rem;
+            }
+            img:nth-child(3) {
+              z-index: 3;
+              right: 1.25rem;
+            }
+            img:nth-child(4) {
+              z-index: 4;
+              right: 1.875rem;
+            }
+            p {
+              z-index: 5;
+              font-size: 1rem;
+              // position: relative;
+              margin: 0;
+              border-radius: 50%;
+              background-color: #fff;
+              color: #4c5f71;
+              text-align: center;
+              // right: 2.5rem;
+            }
+          }
+        }
+      }
+      .employee-view {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        .emloyee-wrapper{
+          width: fit-content;
+          align-items: center;
+          display: flex;
+          gap: 0.6rem;
+        }
+        a {
+          text-decoration: none;
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
